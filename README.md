@@ -16,7 +16,8 @@ DSH（DeepSeek Harness）审批 **Windows 系统通知**插件。当 DSH 需要�
 ## 适用平台
 
 - Windows 7+（通知用 PowerShell + `NotifyIcon.ShowBalloonTip`，无需额外安装）
-- 需要 DeepSeek Harness 桌面应用（用于"唤起桌面应用"模式）或仅浏览器
+- 项目仅在Windows 10经过测试，仍然处于早期开发阶段
+- 需要已有的 DeepSeek Harness （第三方）桌面应用以使用唤起应用 否则只支持唤起浏览器页面
 
 ## 安装
 
