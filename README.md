@@ -1,5 +1,7 @@
 # approval-notify（dsh-approval-notify）
 
+## 本项目仍然处于测试阶段。请确保您有一定的能力以应对可能的问题。如果遇到，请在issue中详细描述。
+
 DSH（DeepSeek Harness）审批 **Windows 系统通知**插件。当 DSH 需要你审批某个操作时，在 Windows 右下角弹出系统通知气泡；**点击通知**即唤起桌面应用或打开浏览器，直达审批界面。
 
 唤起方式（桌面应用 / 浏览器）可在 **设置 → 常规 → 审批通知** 一行中直接切换，写入 `settings.yaml`，即时生效、无需重启。
