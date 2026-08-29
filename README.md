@@ -43,7 +43,9 @@ DSH（DeepSeek Harness）审批 **Windows 系统通知**插件。当 DSH 需要�
    ```
 4. 重启 DeepSeek Harness。
 
-### 方式 B：bundle（需要 pnpm，适合本地/已发布包）
+### 方式 B：bundle（需要 pnpm，适合本地管理，无需手动建软链）
+
+> 本插件当前**未发布到 npm**，方式 B 用于在本地把包注册为 bundle 由 pnpm 管理；若日后发布到 npm，也可把依赖改成 `"approval-notify": "^1.0.0"` 后 `pnpm add` 安装。
 
 1. 把本包加入 profile 的 `package.json`（`~/.dsh/profiles/web/package.json`）：
    ```json
@@ -111,4 +113,4 @@ approval-notify:
 
 ## License
 
-MIT © 2025。发布前请把 `package.json` 里的 `repository`/`homepage` 的 `YOURNAME` 替换为你的 GitHub 用户名；若发布到 npm，建议改包名为 `dsh-approval-notify` 并同步更新 row 名与 junction。
+MIT © 2026。本插件未发布到 npm，以私有仓库形式分发；若日后发布到 npm，建议改包名为 `dsh-approval-notify` 并同步更新 row 名与 junction。
