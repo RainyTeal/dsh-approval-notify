@@ -1,0 +1,9 @@
+# approval-notify bundle patch: one row, dual-face.
+# Mounted either as a bundle (add "approval-notify" to the profile's
+# dsh.profile.bundles + pnpm install) or as a manual profile-patch insert row.
+# The row name MUST equal the package name — the client-modules node half
+# resolves `require.resolve('<row-name>/package.json')` to find the package and
+# its dsh.client declaration.
+- insert:
+    - id: approval-notify
+      name: 'approval-notify'
