@@ -6,12 +6,12 @@ DSH（DeepSeek Harness）审批 **Windows 系统通知**插件。当 DSH 需要�
 
 ## 特性
 
-- 🖥️ 审批时弹出系统通知气泡（标题、工具名、简短原因、会话标题）
-- 👆 点击气泡 → 唤起桌面应用（自动聚焦已有窗口）或打开浏览器
-- ⚙️ 唤起模式可在设置页切换，持久化、即时生效
-- 📍 GUI 地址自动取当前真实监听端口（兼容桌面封装 `--port 0` 随机端口）
-- 🔍 桌面应用路径自动探测，也支持配置覆盖
-- 🪵 可选审计日志（默认关闭）
+- 审批时弹出系统通知气泡（标题、工具名、简短原因、会话标题）
+- 点击气泡 → 唤起桌面应用（自动聚焦已有窗口）或打开浏览器
+- 唤起模式可在设置页切换，持久化、即时生效
+- GUI 地址自动取当前真实监听端口（兼容桌面封装 `--port 0` 随机端口）
+- 桌面应用路径自动探测，也支持配置覆盖
+- 可选审计日志（默认关闭）
 
 ## 适用平台
 
@@ -20,9 +20,7 @@ DSH（DeepSeek Harness）审批 **Windows 系统通知**插件。当 DSH 需要�
 
 ## 安装
 
-插件是一个 Cordis 双面插件包。有两种安装方式，任选其一。
-
-### 方式 A：手动（推荐，无需 pnpm）
+### 目前阶段建议采用手动安装
 
 1. 把本包目录复制到 profile 的 plugins 目录下，例如：
    ```
@@ -42,20 +40,6 @@ DSH（DeepSeek Harness）审批 **Windows 系统通知**插件。当 DSH 需要�
          name: 'approval-notify'
    ```
 4. 重启 DeepSeek Harness。
-
-### 方式 B：bundle（需要 pnpm，适合本地管理，无需手动建软链）
-
-> 本插件当前**未发布到 npm**，方式 B 用于在本地把包注册为 bundle 由 pnpm 管理；若日后发布到 npm，也可把依赖改成 `"approval-notify": "^1.0.0"` 后 `pnpm add` 安装。
-
-1. 把本包加入 profile 的 `package.json`（`~/.dsh/profiles/web/package.json`）：
-   ```json
-   {
-     "dependencies": { "approval-notify": "file:./plugins/approval-notify" },
-     "dsh": { "profile": { "bundles": ["approval-notify"] } }
-   }
-   ```
-2. 在 profile 目录运行 `pnpm install`。
-3. 重启 DeepSeek Harness。
 
 ## 配置
 
@@ -113,4 +97,4 @@ approval-notify:
 
 ## License
 
-MIT © 2026。本插件未发布到 npm，以私有仓库形式分发；若日后发布到 npm，建议改包名为 `dsh-approval-notify` 并同步更新 row 名与 junction。
+MIT © 2026
