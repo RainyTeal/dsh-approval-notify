@@ -14,12 +14,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/RainyTeal/notice_plugin_for_deepseek_harness"
+    "url": "https://github.com/RainyTeal/dsh-approval-notify"
   },
   "bugs": {
-    "url": "https://github.com/RainyTeal/notice_plugin_for_deepseek_harness/issues"
+    "url": "https://github.com/RainyTeal/dsh-approval-notify/issues"
   },
-  "homepage": "https://github.com/RainyTeal/notice_plugin_for_deepseek_harness#readme",
+  "homepage": "https://github.com/RainyTeal/dsh-approval-notify#readme",
   "type": "module",
   "main": "lib/index.mjs",
   "files": [
